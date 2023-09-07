@@ -1,3 +1,19 @@
+# [MAX7301](https://datasheets.maximintegrated.com/en/ds/MAX7301.pdf) GPIO Expander
+
+A python library to control a MAX7301.
+It uses spidev to talk to the chip via SPI.
+
+## Example
+
+```python
+from .py_max7301 import py_max7301
+device = py_max7301.MAX7301(spi_dev=1) # Select the correct spi device
+device.set_pin_as_output(7) # Set pin 7 as output
+device.set_pin(7, 1) # Set to high
+```
+
+# ========== Original README: ==========
+
 max7301
 ==========
 
