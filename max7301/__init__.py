@@ -1,1 +1,1 @@
-from max7301 import MAX7301
+from .max7301 import MAX7301
